@@ -1,0 +1,450 @@
+@import url(http://fonts.googleapis.com/css?family=Lato);
+
+/* BASE */
+
+body {
+    background: #EDEDED;
+}
+
+a {
+    outline: none !important;
+}
+
+img {
+    border: 0;
+}
+
+/* STRUCTURE */
+#containerconf {
+    margin: 0 auto;
+    width: 960px;
+    height: 616px;
+    box-shadow: 1px 1px 5px #cccccc;
+}
+
+#back-container {
+    margin:0 auto;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:15px;
+    text-align: left;
+    width: 945px;
+    margin-top:10px;
+    background: #ffffff;
+    box-shadow: 1px 1px 5px #cccccc;
+}
+
+/* LOADER */
+#mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ffffff;
+    z-index: 10000;
+    height: 100%;
+}
+
+#loader {
+    width: 146px;
+    height: 180px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-image: url("../img/main-loader.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: -93px 0 0 -67px;
+}
+
+/* SIDEBAR */
+#sidebar {
+    float: left;
+    width: 210px;
+    height: 615px;
+    border-top: 1px solid #e3e3e3;
+    z-index: 20 !important;
+    background: #ffffff;
+}
+
+#logo {
+    text-align: center;
+    margin-top: 18px;
+    margin-left: -15px;
+}
+
+/* ACCORDION */
+.ui-accordion .ui-accordion-header {
+    display: block;
+    cursor: pointer;
+    position: relative;
+    margin: 2px 0 0 0;
+    padding: .5em .5em .5em .7em;
+    min-height: 0; /* support: IE7 */
+    font-size: 100%;
+}
+
+.ui-accordion .ui-accordion-icons {
+    padding-left: 2.2em;
+}
+
+.ui-accordion .ui-accordion-icons .ui-accordion-icons {
+    padding-left: 2.2em;
+}
+
+.ui-accordion .ui-accordion-header .ui-accordion-header-icon {
+    position: absolute;
+    left: .5em;
+    top: 53%;
+    margin-top: -8px;
+}
+
+.ui-accordion .ui-accordion-content {
+    padding: 5px 30px 0px 15px;
+    border-top: 0;
+    overflow: auto;
+}
+
+.ui-accordion-content {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.ui-icon {
+    width: 16px;
+    height: 16px;
+}
+
+.ui-icon-triangle-1-e {
+    background-image: url("../img/accordion-closed-icon.png");
+    background-position: -32px -16px;
+    margin-left: 6px;
+}
+
+.ui-icon-triangle-1-s {
+    background-image: url("../img/accordion-open-icon.png");
+    background-position: -64px -16px;
+    margin-left: 6px;
+}
+
+#parts {
+    margin-top: 20px;
+}
+
+#parts h3 {
+    font-family: Lato;
+    font-size: 14px;
+    background: url("../img/accordion-header-bg.png") no-repeat left bottom;
+    outline: none !important;
+    padding-top: 18px;
+    padding-bottom: 14px;
+    padding-left: 40px;
+}
+
+a.opt {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    background-position: top center;
+}
+
+.opt.selected {
+    background-position: bottom center;
+}
+
+#sidebar #nav {
+    overflow: auto;
+    height: 525px;
+}
+
+#sidebar input[type="checkbox"] {
+    display: none;
+}
+
+#sidebar input[type="checkbox"] + label {
+    font-family: Lato;
+    font-size: 14px;
+    color: #666666;
+    font-style: italic;
+}
+
+#sidebar input[type="checkbox"] + label span {
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    margin: -1px 4px 0 0;
+    vertical-align: middle;
+    background: url("../img/check_radio_sheet.png") left top no-repeat;
+    cursor: pointer;
+}
+
+#sidebar input[type="checkbox"]:checked + label span {
+    background: url("../img/check_radio_sheet.png") -19px top no-repeat;
+}
+
+.label-select {
+    width: 165px;
+    height: 29px;
+    overflow: hidden;
+    background: url("../img/select-arrow.png") no-repeat 140px #f6f3f3;
+    border: 1px solid #e5e3e4;
+    border-radius: 4px;
+}
+
+.label-select select {
+    background: transparent;
+    width: 190px;
+    padding: 2px 0px 5px 4px;
+    font-size: 12px;
+    font-famiy: Lato;
+    line-height: 1;
+    border: 0;
+    border-radius: 0;
+    height: 34px;
+    -webkit-appearance: none;
+    color: #000;
+    color: rgba(0, 0, 0, 0);
+    text-shadow: 0 0 0 #000;
+}
+
+.label-select select:focus {
+    outline: none;
+}
+
+.label-select select option{
+	color:#333333!important;
+}
+
+.child {
+    margin-bottom: 10px;
+}
+
+.child h4 {
+    font-family: Lato;
+    font-size: 14px;
+    font-style: italic;
+    color: #666666;
+    font-weight: 300;
+    margin-top: 10px;
+    margin-bottom: 8px;
+    margin-left: 5px;
+}
+
+/* MAIN CONTENT */
+#mainconf {
+    float: left;
+    width: 750px;
+    margin-left: 0px;
+    z-index: 2;
+}
+
+/* EDITOR & RIGHT COLLAPSIBLE SIDEBAR */
+#editor {
+    width: 750px;
+    height: 560px;
+    background: transparent;
+    margin-top: -8px;
+}
+
+#canvas {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+div.img-model-loader {
+    background: url(../img/main-loader.gif) center center no-repeat white;
+    height: 560px;
+    width: 750px;
+    position: absolute;
+}
+
+.img-model {
+    position: absolute;
+}
+
+.sidebar-at-right {
+    z-index: 10 !important;
+}
+
+#frame-buttons {
+    text-align: right;
+    height: 560px;
+}
+
+#call-to-actions {
+    margin-right: 20px;
+    float:right;
+}
+
+#models-sidebar {
+    background: #e6e6e6;
+    height: 560px;
+    display: none;
+    overflow: auto;
+    text-align: center;
+}
+
+#models-sidebar .preview {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#models-sidebar .preview a {
+    margin-top: 20px;
+    display: block;
+}
+
+#models-sidebar .preview p {
+    margin-top: 5px;
+    font-family: Museo-300;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #333333;
+}
+
+#action-buttons {
+    display: inline-block;
+    margin-right: 15px;
+    margin-top: 10px;
+}
+
+.clearer {
+    clear: both;
+    display: block;
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+}
+
+.use-sidebar #frame-buttons {
+    width: 510px !important;
+}
+
+.use-sidebar #models-sidebar {
+    display: block;
+    width: 240px !important;
+}
+
+.use-sidebar.sidebar-at-right #models-sidebar {
+    float: right;
+}
+
+.use-sidebar.sidebar-at-right #frame-buttons {
+    float: left;
+}
+
+/* TOPBAR */
+#topbar {
+    z-index: 5;
+    height: 65px;
+    background-color: #ffffff;
+    background: url("../img/topbar-bg.png") repeat-x;
+}
+
+#model-name {
+    font-family: Museo-300;
+    font-size: 24px;
+    padding-top: 20px;
+    padding-left: 25px;
+    color: #666666;
+    float: left;
+    width: 440px;
+    height: 30px;
+}
+
+#model-name .feedback {
+    margin-right: 10px;
+    display: inline;
+    float: right;
+}
+
+#model-name .mini-loader {
+    display: none;
+}
+
+#model-name .ok {
+    display: none;
+}
+
+#model-name .ko {
+    display: none;
+}
+
+#other-models-button {
+    float: left;
+    width: 239px;
+    padding-left: 0px;
+    padding-top: 4px;
+    margin-top: 14px;
+    background-image: url("../img/right-arrow.png");
+    background-repeat: no-repeat;
+    background-position: 229px 7px;
+	text-align:center;
+}
+
+/* BUTTONS */
+.btn {
+    background: #4d4b4b;
+    border-radius: 20px;
+    color: #ffffff;
+    font-family: Lato;
+    font-size: 16px;
+    text-decoration: none;
+    font-style: italic;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    height: 26px;
+    padding: 4px 15px 2px 15px;
+    display: inline-block;
+}
+
+.btn:hover {
+    background: #373636;
+}
+
+.action-btn {
+    width: 64px;
+    height: 64px;
+    display: block;
+}
+
+.action-btn:hover {
+    background-position: bottom !important;
+}
+
+#photo-btn {
+    background: url("../img/photo-button.png");
+}
+
+#print-btn {
+    background: url("../img/print-button.png");
+}
+
+#restart-btn {
+    background: url("../img/restart-button.png");
+}
+
+#share-btn {
+    background: url("../img/share-button.png");
+}
+
+#warning-message { display: none;}
+@media only screen and (orientation:portrait){
+	#containerconf { display:none; }
+	#back-container { display:none; }
+    #warning-message { 
+		margin-top:35%;
+		font-family:Museo-300;
+		text-align:center;
+		font-size:40px;
+		display:block; 
+	}
+}
+@media only screen and (orientation:landscape){
+    #warning-message { display:none; }
+	#containerconf { display:block; }
+	#back-container { display:block; }
+}

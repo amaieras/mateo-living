@@ -1,0 +1,687 @@
+json({
+  "name":"Gamma",
+  "id":"gamma",
+  
+  "order":[
+    "P:struttura|C:materiale",
+    "P:gradino|C:materiale",
+    "P:helpers_supporti|C:tipo",
+    "P:accessori|C:protezione",
+    "P:ringhiera|C:forma|V:variante",
+    "P:corrimano|C:materiale"
+  ],
+  
+  "commons":["bg.png"],
+  
+  "parts":{
+    "struttura":{
+      "label":"STRUTTURA",
+      "rules":"",
+      "children":{
+        "materiale":{
+          "rules":"",
+          "type":"a",
+          "default":"naturale27",
+          "options":{
+            "naturale27":{
+              "rules":"",
+              "label":"Naturale 27",
+              "preview":"naturale27.png",
+              "value":"naturale27.png"
+            },
+            "naturale12":{
+              "rules":"",
+              "label":"Naturale 12",
+              "preview":"naturale12.png",
+              "value":"naturale12.png"
+            },
+            "noce17":{
+              "rules":"",
+              "label":"Noce 17",
+              "preview":"noce17.png",
+              "value":"noce17.png"
+            },
+            "noce25":{
+              "rules":"",
+              "label":"Noce 25",
+              "preview":"noce25.png",
+              "value":"noce25.png"
+            },
+            "mogano18":{
+              "rules":"",
+              "label":"Mogano 38",
+              "preview":"mogano18.png",
+              "value":"mogano18.png"
+            },
+            "wenge":{
+              "rules":"",
+              "label":"Wengé",
+              "preview":"wenge.png",
+              "value":"wenge.png"
+            },
+            "tortora":{
+              "rules":"",
+              "label":"Tortora",
+              "preview":"tortora.png",
+              "value":"tortora.png"
+            },
+            "cemento":{
+              "rules":"",
+              "label":"Cemento",
+              "preview":"cemento.png",
+              "value":"cemento.png"
+            },
+            "bianco_coprente":{
+              "rules":"",
+              "label":"Bianco coprente",
+              "preview":"bianco_coprente.png",
+              "value":"bianco_coprente.png"
+            },
+            "bianco_sc":{
+              "rules":"",
+              "label":"Bianco semi-coprente",
+              "preview":"bianco_semicoprente.png",
+              "value":"bianco_sc.png"
+            },
+            "campione":{
+              "rules":"",
+              "label":"A campione",
+              "preview":"campione.png",
+              "value":"campione.png"
+            }
+          }
+        }
+      }
+    },
+    "gradino":{
+      "label":"GRADINO",
+      "rules":"[]",
+      "children":{
+        "materiale":{
+          "rules":"",
+          "type":"a",
+          "default":"naturale27",
+          "options":{
+            "naturale27":{
+              "rules":"[P:struttura|C:materiale|O:naturale27]",
+              "label":"Naturale 27",
+              "preview":"naturale27.png",
+              "value":"naturale27.png"
+            },
+            "naturale12":{
+              "rules":"[P:struttura|C:materiale|O:naturale12]",
+              "label":"Naturale 12",
+              "preview":"naturale12.png",
+              "value":"naturale12.png"
+            },
+            "noce17":{
+              "rules":"[P:struttura|C:materiale|O:noce17]",
+              "label":"Noce 17",
+              "preview":"noce17.png",
+              "value":"noce17.png"
+            },
+            "noce25":{
+              "rules":"[P:struttura|C:materiale|O:noce25]",
+              "label":"Noce 25",
+              "preview":"noce25.png",
+              "value":"noce25.png"
+            },
+            "mogano18":{
+              "rules":"[P:struttura|C:materiale|O:mogano18]",
+              "label":"Mogano 38",
+              "preview":"mogano18.png",
+              "value":"mogano18.png"
+            },
+            "wenge":{
+              "rules":"[P:struttura|C:materiale|O:wenge]",
+              "label":"Weng\u00e9",
+              "preview":"wenge.png",
+              "value":"wenge.png"
+            },
+            "tortora":{
+              "rules":"[P:struttura|C:materiale|O:tortora]",
+              "label":"Tortora",
+              "preview":"tortora.png",
+              "value":"tortora.png"
+            },
+            "cemento":{
+              "rules":"[P:struttura|C:materiale|O:cemento]",
+              "label":"Cemento",
+              "preview":"cemento.png",
+              "value":"cemento.png"
+            },
+            "bianco_coprente":{
+              "rules":"[P:struttura|C:materiale|O:bianco_coprente]",
+              "label":"Bianco coprente",
+              "preview":"bianco_coprente.png",
+              "value":"bianco_coprente.png"
+            },
+            "bianco_sc":{
+              "rules":"[P:struttura|C:materiale|O:bianco_sc]",
+              "label":"Bianco semi-coprente",
+              "preview":"bianco_semicoprente.png",
+              "value":"bianco_sc.png"
+            },
+            "campione":{
+              "rules":"[P:struttura|C:materiale|O:campione]",
+              "label":"A campione",
+              "preview":"campione.png",
+              "value":"campione.png"
+            }
+          }
+        }
+      }
+    },
+    "ringhiera":{
+      "label":"RINGHIERA",
+      "rules":"",
+      "children":{
+        "forma":{
+          "rules":"",
+          "type":"select",
+          "default":"tube_colonnine",
+          "options":{
+            "tube_colonnine":{
+              "rules":"",
+              "label":"Tube a colonnine",
+              "children":{
+                "variante":{
+                  "rules":"",
+                  "label":"",
+                  "type":"a",
+                  "default":"tube_colonnine_nero",
+                  "options":{
+                    "tube_colonnine_nero":{
+                      "rules":"",
+                      "label":"Nero",
+                      "preview":"nero.png",
+                      "value":"tube_colonnine_nero.png"
+                    },
+                    "tube_colonnine_testurizzato":{
+                      "rules":"",
+                      "label":"Testurizzato",
+                      "preview":"testurizzato.png",
+                      "value":"tube_colonnine_testurizzato.png"
+                    },
+                    "tube_colonnine_silver":{
+                      "rules":"",
+                      "label":"Grigio argento",
+                      "preview":"silver.png",
+                      "value":"tube_colonnine_silver.png"
+                    },
+                    "tube_colonnine_bianco":{
+                      "rules":"",
+                      "label":"Bianco",
+                      "preview":"bianco.png",
+                      "value":"tube_colonnine_bianco.png"
+                    },
+                    "tube_colonnine_cromo":{
+                      "rules":"",
+                      "label":"Cromo",
+                      "preview":"cromo.png",
+                      "value":"tube_colonnine_cromo.png"
+                    },
+                    "tube_colonnine_campione":{
+                      "rules":"",
+                      "label":"A campione",
+                      "preview":"campione.png",
+                      "value":"tube_colonnine_campione.png"
+                    }
+                  }
+                }
+              }
+            },
+            "tube_cavetti_paralleli":{
+              "rules":"",
+              "label":"Tube a cavetti paralleli",
+              "children":{
+                "variante":{
+                  "rules":"",
+                  "label":"",
+                  "type":"a",
+                  "default":"tube_cavetti_paralleli_nero",
+                  "options":{
+                    "tube_cavetti_paralleli_nero":{
+                      "rules":"",
+                      "label":"Nero",
+                      "preview":"nero.png",
+                      "value":"tube_cavetti_paralleli_nero.png"
+                    },
+                    "tube_cavetti_paralleli_testurizzato":{
+                      "rules":"",
+                      "label":"Testurizzato",
+                      "preview":"testurizzato.png",
+                      "value":"tube_cavetti_paralleli_testurizzato.png"
+                    },
+                    "tube_cavetti_paralleli_silver":{
+                      "rules":"",
+                      "label":"Grigio argento",
+                      "preview":"silver.png",
+                      "value":"tube_cavetti_paralleli_silver.png"
+                    },
+                    "tube_cavetti_paralleli_bianco":{
+                      "rules":"",
+                      "label":"Bianco",
+                      "preview":"bianco.png",
+                      "value":"tube_cavetti_paralleli_bianco.png"
+                    },
+                    "tube_cavetti_paralleli_cromo":{
+                      "rules":"",
+                      "label":"Cromo",
+                      "preview":"cromo.png",
+                      "value":"tube_cavetti_paralleli_cromo.png"
+                    },
+                    "tube_cavetti_paralleli_campione":{
+                      "rules":"",
+                      "label":"A campione",
+                      "preview":"campione.png",
+                      "value":"tube_cavetti_paralleli_campione.png"
+                    }
+                  }
+                }
+              }
+            },
+            "tube_cavetti_incrociati":{
+              "rules":"",
+              "label":"Tube a cavetti incrociati",
+              "children":{
+                "variante":{
+                  "rules":"",
+                  "label":"",
+                  "type":"a",
+                  "default":"tube_cavetti_incrociati_nero",
+                  "options":{
+                    "tube_cavetti_incrociati_nero":{
+                      "rules":"",
+                      "label":"Nero",
+                      "preview":"nero.png",
+                      "value":"tube_cavetti_incrociati_nero.png"
+                    },
+                    "tube_cavetti_incrociati_testurizzato":{
+                      "rules":"",
+                      "label":"Testurizzato",
+                      "preview":"testurizzato.png",
+                      "value":"tube_cavetti_incrociati_testurizzato.png"
+                    },
+                    "tube_cavetti_incrociati_silver":{
+                      "rules":"",
+                      "label":"Grigio argento",
+                      "preview":"silver.png",
+                      "value":"tube_cavetti_incrociati_silver.png"
+                    },
+                    "tube_cavetti_incrociati_bianco":{
+                      "rules":"",
+                      "label":"Bianco",
+                      "preview":"bianco.png",
+                      "value":"tube_cavetti_incrociati_bianco.png"
+                    },
+                    "tube_cavetti_incrociati_cromo":{
+                      "rules":"",
+                      "label":"Cromo",
+                      "preview":"cromo.png",
+                      "value":"tube_cavetti_incrociati_cromo.png"
+                    },
+                    "tube_cavetti_incrociati_campione":{
+                      "rules":"",
+                      "label":"A campione",
+                      "preview":"campione.png",
+                      "value":"tube_cavetti_incrociati_campione.png"
+                    }
+                  }
+                }
+              }
+            },
+            "minimal":{
+              "rules":"",
+              "label":"Minimal",
+              "children":{
+                "variante":{
+                  "rules":"",
+                  "label":"",
+                  "type":"a",
+                  "default":"minimal_silver",
+                  "options":{
+                    "minimal_silver":{
+                      "rules":"",
+                      "label":"Grigio argento",
+                      "preview":"silver.png",
+                      "value":"minimal_silver.png"
+                    },
+                    "minimal_bianco":{
+                      "rules":"",
+                      "label":"Bianco",
+                      "preview":"bianco.png",
+                      "value":"minimal_bianco.png"
+                    },
+                    "minimal_test":{
+                      "rules":"",
+                      "label":"Testurizzato",
+                      "preview":"testurizzato.png",
+                      "value":"minimal_test.png"
+                    },
+                    "minimal_cromo":{
+                      "rules":"",
+                      "label":"Cromo",
+                      "preview":"cromo.png",
+                      "value":"minimal_cromo.png"
+                    },
+                    "minimal_inox":{
+                      "rules":"",
+                      "label":"Inox",
+                      "preview":"inox.png",
+                      "value":"minimal_inox.png"
+                    },
+                    "minimal_camp":{
+                      "rules":"",
+                      "label":"A campione",
+                      "preview":"campione.png",
+                      "value":"minimal_camp.png"
+                    }
+                  }
+                }
+              }
+            },
+            "leaf":{
+              "rules":"",
+              "label":"Leaf",
+              "children":{
+                "variante":{
+                  "rules":"",
+                  "label":"",
+                  "type":"a",
+                  "default":"leaf_silver",
+                  "options":{
+                    "leaf_silver":{
+                      "rules":"",
+                      "label":"Grigio argento",
+                      "preview":"silver.png",
+                      "value":"leaf_silver.png"
+                    },
+                    "leaf_bianco":{
+                      "rules":"",
+                      "label":"Bianco",
+                      "preview":"bianco.png",
+                      "value":"leaf_bianco.png"
+                    },
+                    "leaf_test":{
+                      "rules":"",
+                      "label":"Testurizzato",
+                      "preview":"testurizzato.png",
+                      "value":"leaf_test.png"
+                    },
+                    "leaf_cromo":{
+                      "rules":"",
+                      "label":"Cromo",
+                      "preview":"cromo.png",
+                      "value":"leaf_cromo.png"
+                    },
+                    "leaf_inox":{
+                      "rules":"",
+                      "label":"Inox",
+                      "preview":"inox.png",
+                      "value":"leaf_inox.png"
+                    },
+                    "leaf_camp":{
+                      "rules":"",
+                      "label":"A campione",
+                      "preview":"campione.png",
+                      "value":"leaf_camp.png"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "corrimano":{
+      "label":"CORRIMANO",
+      "rules":"[]",
+      "children":{
+        "materiale":{
+          "rules":"",
+          "type":"a",
+          "default":"tube_naturale27",
+          "options":{
+            "tube_naturale27":{
+              "rules":"[P:struttura|C:materiale|O:naturale27] && ![P:ringhiera|C:forma|O:minimal] && ![P:ringhiera|C:forma|O:leaf]",
+              "label":"Naturale 27",
+              "preview":"naturale27.png",
+              "value":"tube_naturale27.png"
+            },
+            "minimal_naturale27":{
+              "rules":"[P:struttura|C:materiale|O:naturale27] && ([P:ringhiera|C:forma|O:minimal] || [P:ringhiera|C:forma|O:leaf])",
+              "label":"Naturale 27",
+              "preview":"naturale27.png",
+              "value":"minimal_naturale27.png"
+            },
+            "tube_naturale12":{
+              "rules":"[P:struttura|C:materiale|O:naturale12] && ![P:ringhiera|C:forma|O:minimal] && ![P:ringhiera|C:forma|O:leaf]",
+              "label":"Naturale 12",
+              "preview":"naturale12.png",
+              "value":"tube_naturale12.png"
+            },
+            "minimal_naturale12":{
+              "rules":"[P:struttura|C:materiale|O:naturale12] && ([P:ringhiera|C:forma|O:minimal] || [P:ringhiera|C:forma|O:leaf])",
+              "label":"Naturale 12",
+              "preview":"naturale12.png",
+              "value":"minimal_naturale12.png"
+            },
+            "tube_noce17":{
+              "rules":"[P:struttura|C:materiale|O:noce17] && ![P:ringhiera|C:forma|O:minimal] && ![P:ringhiera|C:forma|O:leaf]",
+              "label":"Noce 17",
+              "preview":"noce17.png",
+              "value":"tube_noce17.png"
+            },
+            "tube_noce25":{
+              "rules":"[P:struttura|C:materiale|O:noce25] && ![P:ringhiera|C:forma|O:minimal] && ![P:ringhiera|C:forma|O:leaf]",
+              "label":"Noce 25",
+              "preview":"noce25.png",
+              "value":"tube_noce25.png"
+            },
+            "minimal_noce17":{
+              "rules":"[P:struttura|C:materiale|O:noce17] && ([P:ringhiera|C:forma|O:minimal] || [P:ringhiera|C:forma|O:leaf])",
+              "label":"Noce 17",
+              "preview":"noce17.png",
+              "value":"minimal_noce17.png"
+            },
+            "minimal_noce25":{
+              "rules":"[P:struttura|C:materiale|O:noce25] && ([P:ringhiera|C:forma|O:minimal] || [P:ringhiera|C:forma|O:leaf])",
+              "label":"Noce 25",
+              "preview":"noce25.png",
+              "value":"minimal_noce25.png"
+            },
+            "tube_mogano18":{
+              "rules":"[P:struttura|C:materiale|O:mogano18] && ![P:ringhiera|C:forma|O:minimal] && ![P:ringhiera|C:forma|O:leaf]",
+              "label":"Mogano 38",
+              "preview":"mogano18.png",
+              "value":"tube_mogano18.png"
+            },
+            "minimal_mogano18":{
+              "rules":"[P:struttura|C:materiale|O:mogano18] && ([P:ringhiera|C:forma|O:minimal] || [P:ringhiera|C:forma|O:leaf])",
+              "label":"Mogano 38",
+              "preview":"mogano18.png",
+              "value":"minimal_mogano18.png"
+            },
+            "tube_wenge":{
+              "rules":"[P:struttura|C:materiale|O:wenge] && ![P:ringhiera|C:forma|O:minimal] && ![P:ringhiera|C:forma|O:leaf]",
+              "label":"Weng\u00e9",
+              "preview":"wenge.png",
+              "value":"tube_wenge.png"
+            },
+            "minimal_wenge":{
+              "rules":"[P:struttura|C:materiale|O:wenge] && ([P:ringhiera|C:forma|O:minimal] || [P:ringhiera|C:forma|O:leaf])",
+              "label":"Weng\u00e9",
+              "preview":"wenge.png",
+              "value":"minimal_wenge.png"
+            },
+            "tube_tortora":{
+              "rules":"[P:struttura|C:materiale|O:tortora] && ![P:ringhiera|C:forma|O:minimal] && ![P:ringhiera|C:forma|O:leaf]",
+              "label":"Tortora",
+              "preview":"tortora.png",
+              "value":"tube_tortora.png"
+            },
+            "minimal_tortora":{
+              "rules":"[P:struttura|C:materiale|O:tortora] && ([P:ringhiera|C:forma|O:minimal] || [P:ringhiera|C:forma|O:leaf])",
+              "label":"Tortora",
+              "preview":"tortora.png",
+              "value":"minimal_tortora.png"
+            },
+            "tube_cemento":{
+              "rules":"[P:struttura|C:materiale|O:cemento] && ![P:ringhiera|C:forma|O:minimal] && ![P:ringhiera|C:forma|O:leaf]",
+              "label":"Cemento",
+              "preview":"cemento.png",
+              "value":"tube_cemento.png"
+            },
+            "minimal_cemento":{
+              "rules":"[P:struttura|C:materiale|O:cemento] && ([P:ringhiera|C:forma|O:minimal] || [P:ringhiera|C:forma|O:leaf])",
+              "label":"Cemento",
+              "preview":"cemento.png",
+              "value":"minimal_cemento.png"
+            },
+            "tube_bianco_coprente":{
+              "rules":"[P:struttura|C:materiale|O:bianco_coprente] && ![P:ringhiera|C:forma|O:minimal] && ![P:ringhiera|C:forma|O:leaf]",
+              "label":"Bianco coprente",
+              "preview":"bianco_coprente.png",
+              "value":"tube_bianco_coprente.png"
+            },
+            "tube_bianco_sc":{
+              "rules":"[P:struttura|C:materiale|O:bianco_sc] && ![P:ringhiera|C:forma|O:minimal] && ![P:ringhiera|C:forma|O:leaf]",
+              "label":"Bianco semi-coprente",
+              "preview":"bianco_semicoprente.png",
+              "value":"tube_bianco_sc.png"
+            },
+            "minimal_bianco_coprente":{
+              "rules":"[P:struttura|C:materiale|O:bianco_coprente] && ([P:ringhiera|C:forma|O:minimal] || [P:ringhiera|C:forma|O:leaf])",
+              "label":"Bianco coprente",
+              "preview":"bianco_coprente.png",
+              "value":"minimal_bianco_coprente.png"
+            },
+            "minimal_bianco_sc":{
+              "rules":"[P:struttura|C:materiale|O:bianco_sc] && ([P:ringhiera|C:forma|O:minimal] || [P:ringhiera|C:forma|O:leaf])",
+              "label":"Bianco semi-coprente",
+              "preview":"bianco_sc.png",
+              "value":"minimal_bianco_sc.png"
+            },
+            "tube_campione":{
+              "rules":"[P:struttura|C:materiale|O:campione] && ![P:ringhiera|C:forma|O:minimal] && ![P:ringhiera|C:forma|O:leaf]",
+              "label":"A campione",
+              "preview":"campione.png",
+              "value":"tube_campione.png"
+            },
+            "minimal_campione":{
+              "rules":"[P:struttura|C:materiale|O:campione] && ([P:ringhiera|C:forma|O:minimal] || [P:ringhiera|C:forma|O:leaf])",
+              "label":"A campione",
+              "preview":"campione.png",
+              "value":"minimal_campione.png"
+            }
+          }
+        }
+      }
+    },
+    "accessori":{
+      "label":"ACCESSORI",
+      "rules":"",
+      "children":{
+        "protezione":{
+          "rules":"",
+          "type":"checkbox",
+          "default":"",
+          "options":{
+            "protezione_alzata":{
+              "rules":"",
+              "label":"Protezione alzata",
+              "value":"protezione_alzata.png"
+            }
+          }
+        }
+      }
+    },
+    "helpers_supporti":{
+      "label":"",
+      "rules":"[]",
+      "children":{
+        "tipo":{
+          "rules":"",
+          "type":"a",
+          "default":"naturale27",
+          "options":{
+            "naturale27":{
+              "rules":"[P:struttura|C:materiale|O:naturale27] && ([P:ringhiera|C:forma|O:minimal] || [P:ringhiera|C:forma|O:leaf])",
+              "label":"",
+              "preview":"",
+              "value":"sup_naturale27.png"
+            },
+            "naturale12":{
+              "rules":"[P:struttura|C:materiale|O:naturale12] && ([P:ringhiera|C:forma|O:minimal] || [P:ringhiera|C:forma|O:leaf])",
+              "label":"",
+              "preview":"",
+              "value":"sup_naturale12.png"
+            },
+            "noce15":{
+              "rules":"[P:struttura|C:materiale|O:noce15] && ([P:ringhiera|C:forma|O:minimal] || [P:ringhiera|C:forma|O:leaf])",
+              "label":"",
+              "preview":"",
+              "value":"sup_noce15.png"
+            },
+            "noce16":{
+              "rules":"[P:struttura|C:materiale|O:noce17] && ([P:ringhiera|C:forma|O:minimal] || [P:ringhiera|C:forma|O:leaf])",
+              "label":"",
+              "preview":"",
+              "value":"sup_noce17.png"
+            },
+            "noce25":{
+              "rules":"[P:struttura|C:materiale|O:noce25] && ([P:ringhiera|C:forma|O:minimal] || [P:ringhiera|C:forma|O:leaf])",
+              "label":"",
+              "preview":"",
+              "value":"sup_noce25.png"
+            },
+            "mogano18":{
+              "rules":"[P:struttura|C:materiale|O:mogano18] && ([P:ringhiera|C:forma|O:minimal] || [P:ringhiera|C:forma|O:leaf])",
+              "label":"",
+              "preview":"",
+              "value":"sup_mogano18.png"
+            },
+            "wenge":{
+              "rules":"[P:struttura|C:materiale|O:wenge] && ([P:ringhiera|C:forma|O:minimal] || [P:ringhiera|C:forma|O:leaf])",
+              "label":"",
+              "preview":"",
+              "value":"sup_wenge.png"
+            },
+            "tortora":{
+              "rules":"[P:struttura|C:materiale|O:tortora] && ([P:ringhiera|C:forma|O:minimal] || [P:ringhiera|C:forma|O:leaf])",
+              "label":"",
+              "preview":"",
+              "value":"sup_tortora.png"
+            },
+            "cemento":{
+              "rules":"[P:struttura|C:materiale|O:cemento] && ([P:ringhiera|C:forma|O:minimal] || [P:ringhiera|C:forma|O:leaf])",
+              "label":"",
+              "preview":"",
+              "value":"sup_cemento.png"
+            },
+            "bianco_sc":{
+              "rules":"[P:struttura|C:materiale|O:bianco_sc] && ([P:ringhiera|C:forma|O:minimal] || [P:ringhiera|C:forma|O:leaf])",
+              "label":"",
+              "preview":"",
+              "value":"sup_bianco_sc.png"
+            },
+            "bianco":{
+              "rules":"[P:struttura|C:materiale|O:bianco_coprente] && ([P:ringhiera|C:forma|O:minimal] || [P:ringhiera|C:forma|O:leaf])",
+              "label":"",
+              "preview":"",
+              "value":"sup_bianco.png"
+            },
+            "campione":{
+              "rules":"[P:struttura|C:materiale|O:campione] && ([P:ringhiera|C:forma|O:minimal] || [P:ringhiera|C:forma|O:leaf])",
+              "label":"",
+              "preview":"",
+              "value":"sup_campione.png"
+            }
+          }
+        }
+      }
+    }
+  }
+})
