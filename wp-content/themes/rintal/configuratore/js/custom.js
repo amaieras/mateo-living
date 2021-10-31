@@ -19,7 +19,7 @@ jQuery(document)
 		/*$('#share2-btn').socialShare({
 	    	social: 'facebook,linkedin,twitter,pinterest'
 		});*/
-		
+
 		$('#share-btn').click(function(e){
         	var model = jQuery('#model-id').val();
 			var images = [];
@@ -339,6 +339,12 @@ jQuery(document)
             e.preventDefault();
             window.history.back();
         });*/
+
+
+      $( "#combobox" ).combobox();
+      $( "#toggle" ).on( "click", function() {
+        $( "#combobox" ).toggle();
+      });
 		
     }
 );
@@ -1059,4 +1065,6 @@ function editCanvas(values) {
         },
         waitForAll: true
     });
+
+
 }

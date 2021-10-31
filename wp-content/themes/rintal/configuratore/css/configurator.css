@@ -448,3 +448,71 @@ div.img-model-loader {
 	#containerconf { display:block; }
 	#back-container { display:block; }
 }
+
+/* Contact page */
+#contact {
+  cursor: pointer;
+}
+#contact-container {
+    display: none;
+    margin-top: 12px;
+    margin-right: 15px;
+}
+input[type=text], input[type=email], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+.category-label, .custom-combobox {
+    display: block;
+    margin-bottom: 8px;
+}
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+#contact-container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+.custom-combobox-input {
+    color: black;
+    font-weight: 100;
+    font-size: 1em;
+}
+/* End of contact page */
+
+.custom-combobox {
+    position: relative;
+    display: inline-block;
+}
+.custom-combobox-toggle {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin-left: -1px;
+    padding: 0;
+}
+.custom-combobox-input {
+    margin: 0;
+    padding: 5px 10px;
+}
+
+#close-contact {
+    text-align: end;
+    cursor: pointer;
+}
