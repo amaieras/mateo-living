@@ -1,1 +1,1 @@
-# mateo-living
+# mateo-living-configurator
