@@ -141,13 +141,67 @@ $(document).ready(function ($) {
     $('#contact-container').show();
   });
 
-  $(document).on('click','#send-message',function(){
-    console.log("Sending message");
-  });
 
   $(document).on('click','#close-contact',function(){
     $('#contact-container').hide();
   });
 
   // END CONTACT FORM
+
+  // firebase stuff
+  // var config = {
+  //   apiKey: "AIzaSyDL-_f_lQb4dnkx6GRrL7O7L7sp2A1Kj1w",
+  //   authDomain: "ds-mobile-dev.firebaseapp.com",
+  //   databaseURL: "https://ds-mobile-dev.firebaseio.com",
+  //   projectId: "ds-mobile-dev",
+  //   storageBucket: "ds-mobile-dev.appspot.com",
+  //   messagingSenderId: "931169905269"
+  // };
+  // firebase.initializeApp(config);
+  //
+  // const dbRef = firebase.database();
+  // const messagesRef = dbRef.ref('mateo-contact-messages');
+  // function showSnackbar() {
+  //   // Get the snackbar DIV
+  //   let x = document.getElementById("snackbar");
+  //
+  //   // Add the "show" class to DIV
+  //   x.className = "show";
+  //
+  //   // After 3 seconds, remove the show class from DIV
+  //   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+  // }
+  // function fieldsValid(message) {
+  //   return message.category != "0" && message.lastname && message.firstname && message.phone;
+  // }
+  // function resetFields() {
+  //   $("#combobox").val("0")
+  //   $("#lastname").val("")
+  //   $("#firstname").val("")
+  //   $("#phone").val("")
+  //   $("#email").val("")
+  //   $("#city").val("")
+  //   $("#message").val("")
+  // }
+  // $(document).on('click','#send-message',function(){
+  //   const message = {
+  //     category: $("#combobox").val(),
+  //     lastname:  $("#lastname").val().trim().toLowerCase(),
+  //     firstname: $("#firstname").val().trim().toLowerCase(),
+  //     phone: $("#phone").val(),
+  //     email: $("#email").val().trim().toLowerCase(),
+  //     city: $("#city").val().trim().toLowerCase(),
+  //     message: $("#message").val().trim().toLowerCase(),
+  //   }
+  //   console.log(fieldsValid(message));
+  //
+  //   if (!fieldsValid(message)) {
+  //     alert("Te rugam sa completezi campurile obligatorii marcate cu *");
+  //   } else {
+  //     messagesRef.push(message)
+  //     resetFields();
+  //     showSnackbar();
+  //   }
+  // });
+  // end firebase stuff
 })
