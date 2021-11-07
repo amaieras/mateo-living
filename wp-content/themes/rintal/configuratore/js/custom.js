@@ -234,9 +234,9 @@ jQuery(document)
                     break;
             }
             if (send) {
-                if (button == 'print-btn') {					
-                    var w = window.open(path+'pdftemp.php?msg='+encodeURI(translate('Creazione documento, attendere...')));
-                }	
+                if (button == 'print-btn') {
+                  var w = window.open('', '_blank', 'top=0,left=0,height=100%,width=auto');
+                }
 				
                 jQuery.ajax({
                     url: path+"ajax.php",
@@ -267,8 +267,9 @@ jQuery(document)
                                     jQuery('.mini-loader').hide();
                                     break;
                                 case 'print-btn':
-                                    w.location.href = response.url;
-                                    jQuery('.mini-loader').hide();
+                                  var url = "https://www.rintal.com" + response.url;
+                                  w.location.href = url;
+                                  jQuery('.mini-loader').hide();
                                     break;
                                 case 'save-btn':
                                     jQuery('.mini-loader').hide();
